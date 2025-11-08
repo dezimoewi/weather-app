@@ -1,7 +1,7 @@
 const apiKey = 'd29245ff55eaa3256cf2ed3147d3a0f6'; 
 
 async function getWeather() {
-  const city = document.getElementById('cityInput').value.trim();
+  const city = document.getElementById('cityinput').value.trim();
   if (!city) return;
 
   try {
@@ -19,10 +19,10 @@ async function getWeather() {
     const desc = data.weather[0].description;
     const weather = data.weather[0].main;
 
-    document.getElementById('cityName').innerText = data.name;
+    document.getElementById('cityname').innerText = data.name;
     document.getElementById('temperature').innerText = `${temp.toFixed(1)} °C`;
     document.getElementById('description').innerText = desc;
-    document.getElementById('weatherCard').style.display = 'block';
+    document.getElementById('weathercard').style.display = 'block';
 
     changeBackground(weather);
   } catch (error) {
