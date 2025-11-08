@@ -1,6 +1,6 @@
 const apiKey = 'd29245ff55eaa3256cf2ed3147d3a0f6'
 
-async function getWeather() {
+async function getWeather () {
   const city = document.getElementById('cityinput').value.trim()
   if (!city) return
 
@@ -31,7 +31,9 @@ async function getWeather() {
   }
 }
 
-function changeBackground(condition) {
+getWeather()
+
+function changeBackground (condition) {
   const body = document.body
 
   const weatherThemes = {
