@@ -1,4 +1,4 @@
-const apiKey = 'd29245ff55eaa3256cf2ed3147d3a0f6'
+const apiKey = import.meta.env.API_KEY
 
 async function getWeather () {
   const city = document.getElementById('cityinput').value.trim()
